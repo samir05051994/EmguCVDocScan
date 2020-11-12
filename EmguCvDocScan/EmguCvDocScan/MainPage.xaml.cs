@@ -1,0 +1,25 @@
+﻿using Emgu.CV;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace EmguCvDocScan
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            Appearing += MainPage_Appearing;
+        }
+
+        private void MainPage_Appearing(object sender, EventArgs e)
+        {
+            Mat m = new Mat();
+        }
+    }
+}
